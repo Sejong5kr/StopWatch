@@ -445,6 +445,10 @@
             name="StopWatch" abstractType="#7e80610e-e0a7-464f-a9eb-e0df46d690e7"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="7e80610e-e0a7-464f-a9eb-e0df46d690e7" name="StopWatch">
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="4d1eef1e-49dc-4be0-9ee5-5973bd7280c9" name="ButtonConnection" convoyedInformations="#c65c3122-8f89-485f-bf5e-36f494f259b0 #5cdb88b8-9b1e-49cd-bf53-9111dd2ed97e"
+              source="#23c87a78-8e6f-4998-b2d6-51ff1fabfee8" target="#87d85956-64af-4b40-bf98-0b2eae86a51e"
+              kind="FLOW"/>
           <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
               id="710639be-b1ce-4015-8b67-3ec48c803372" name="Interfaces">
             <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
@@ -514,6 +518,9 @@
                     source="#09363fc1-26a6-4367-b651-40caa77627b5" target="#1d1993ab-ceb5-4640-ae67-85d09b886d13"/>
               </ownedRegions>
             </ownedStateMachines>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="23c87a78-8e6f-4998-b2d6-51ff1fabfee8" name="CP 1" requiredInterfaces="#0b6f1adb-bbc5-4bf1-a6a6-16e407b732dd"
+                orientation="OUT" kind="FLOW"/>
             <ownedInterfaceUses xsi:type="org.polarsys.capella.core.data.cs:InterfaceUse"
                 id="33439cba-59d5-4bd2-a1af-700d76d3a87a" usedInterface="#0b6f1adb-bbc5-4bf1-a6a6-16e407b732dd"/>
           </ownedLogicalComponents>
@@ -587,6 +594,9 @@
               <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
                   id="9e26a5fa-07fe-4349-a178-138ae41146e8" value="1"/>
             </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="87d85956-64af-4b40-bf98-0b2eae86a51e" name="CP 3" providedInterfaces="#0b6f1adb-bbc5-4bf1-a6a6-16e407b732dd"
+                orientation="IN" kind="FLOW"/>
             <ownedInterfaceUses xsi:type="org.polarsys.capella.core.data.cs:InterfaceUse"
                 id="147868c9-353a-43f0-8f13-462d495e19e4" usedInterface="#12547498-becb-42c6-8779-6c30f62fce9e"/>
             <ownedInterfaceImplementations xsi:type="org.polarsys.capella.core.data.cs:InterfaceImplementation"
